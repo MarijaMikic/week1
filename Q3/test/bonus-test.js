@@ -41,7 +41,6 @@ describe("SystemOfEquations", function () {
             "b": ["51", "106", "32"]
         },
             "contracts/bonus/SystemOfEquations/SystemOfEquations_js/SystemOfEquations.wasm","contracts/bonus/SystemOfEquations/circuit_final.zkey");
-
         const editedPublicSignals = unstringifyBigInts(publicSignals);
         const editedProof = unstringifyBigInts(proof);
         const calldata = await groth16.exportSolidityCallData(editedProof, editedPublicSignals);
